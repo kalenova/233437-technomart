@@ -9,7 +9,9 @@
       <div class="container">
 					
 				<div class="index-logo">
+				<a href="#">
 				<img src="img/150x100.png" alt="logo" width="150" height="100">
+				</a>
 				</div>
 				
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -42,8 +44,17 @@
 				</div>
 				
 				<div class="user-block">
-					<a class="enter" href="#">Войти</a>
-					<a class="registration" href="#">Регистрация</a>
+					<a class="person" href="#">Равшан Джамшутович</a>
+					<nav class="person-navigation">
+						<ul>
+							<li>
+								<a href="#">Мои заказы</a>
+							</li>
+							<li>
+								<a href="#">Личный кабинет</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 				
 			</div>
@@ -78,27 +89,56 @@
 		</div>
 		
 		<main>	
-	  	<div class="container">		
+			
+			<div class="index-content">
+		
+			<ul class="index-content-breadcrumbs">
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Инструмент</a></li>
+				<li><a href="#">Перфораторы</a></li>
+			</ul> 
 				
-				<section class="main-banners">
-					<img src="img/150x100.png" alt="materials" class="banner sticker-new" width="150" height="100">
-					<img src="img/150x100.png" alt="instruments" class="banner" width="150" height="100">
-					<img src="img/150x100.png" alt="technics" class="banner" width="150" height="100">
-					<div class="slider">
-						<b>Перфораторы</b>
-						<p>Настроящие мужские игрушки</p>
-						<button class="btn-open" type="submit">ОТКРЫТЬ КАТАЛОГ</button>
-						<img src="img/150x100.png" alt="slider-img" width="150" height="100">
-					</div>
-					<img src="img/150x100.png" alt="discounts" class="banner" width="150" height="100">
-					<img src="img/150x100.png" alt="delivery" class="banner" width="150" height="100">				
-				</section>	
+			<h1>ПЕРФОРАТОРЫ</h1>
+				
+				<aside class="index-content-filters">
+					<p class="head-filters">ФИЛЬТР:</p>
+					
+					<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
 
-				<section class="main-popular-goods">
-					<div class="main-popular-head">
-						<h2>Популярные товары:</h2>
-						<button class="btn-all-goods" type="submit">Все популярные товары</button>
-					</div>
+						<div class="index-content-price">
+							<p class="filters-form-title"><b>ЦЕНА:</b></p>
+  						<script src="slider.js"></script>
+						</div>	
+						
+						<div class="index-content-producers">
+							<p class="filters-form-title"><b>ПРОИЗВОДИТЕЛИ:</b></p>
+							<input type="checkbox" name="producers" value="baxter" checked>BOSCH
+							<input type="checkbox" name="producers" value="natty">ИНТЕРСКОЛ
+							<input type="checkbox" name="producers" value="suavecito" checked>MAKITA
+							<input type="checkbox" name="producers" value="malin-goetz">DEWALT
+							<input type="checkbox" name="producers" value="murray">HITACHI
+						</div>	
+
+						<div class="index-content-power">
+							<p class="filters-form-title"><b>ПИТАНИЕ:</b></p>
+							<input type="radio" name="power" value="razor" checked>Аккумуляторные
+							<input type="radio" name="power" value="care">Сетевые
+						</div>
+						
+						<button class="btn" type="submit">Показать</button>
+					</form>
+				</aside>						
+				
+			<div class="catalog">
+				
+				<div class="sort-catalog">
+					<p>Сортировка</p>
+					<a href="#">По цене</a>
+					<a href="#">По типу</a>
+					<a href="#">По функционалу</a>
+				</div>
+
+				<div class="catalog-mini-сar">
 
 					<article  class="mini-сard">
 						<div class="mini-сard-photo">
@@ -117,6 +157,15 @@
 						<p class="price-old">32500 Р.</p>
 						<p class="price">25500 Р.</p>			
 					</article>	
+
+					<article  class="mini-сard-focus">
+						<div class="mini-сard-btn">
+							<button class="btn-buy" type="submit">Купить</button>
+							<button class="btn-bookmarks" type="submit">В закладки</button>
+						</div>
+						<h3 class="mini-сard-name">Перфоратор BOSCH BFG 9000</h3>
+						<p class="price">25500 Р.</p>			
+					</article>						
 
 					<article  class="mini-сard">
 						<div class="mini-сard-photo">
@@ -134,52 +183,58 @@
 						<h3 class="mini-сard-name">Перфоратор BOSCH BFG 9000</h3>
 						<p class="price-old">32500 Р.</p>
 						<p class="price">25500 Р.</p>			
-					</article>	
-				</section>
+					</article>						
 
-				<section class="main-popular-manufacturers">
-					<div class="main-popular-head">
-						<h2>Популярные производители:</h2>
-						<button class="btn-all-manufacturers" type="submit">Все производители</button>
+					<article  class="mini-сard">
+						<div class="mini-сard-photo">
+							<img src="img/150x100.png" alt="photo" width="150" height="100">
+						</div>
+						<h3 class="mini-сard-name">Перфоратор BOSCH BFG 9000</h3>
+						<p class="price">25500 Р.</p>			
+					</article>
+
+					<article  class="mini-сard">
+						<div class="mini-сard-photo sticker-new">
+							<img src="img/150x100.png" alt="photo" width="150" height="100">
+						</div>
+						<h3 class="mini-сard-name">Перфоратор BOSCH BFG 9000</h3>
+						<p class="price-old">32500 Р.</p>
+						<p class="price">25500 Р.</p>			
+					</article>						
+
+					<article  class="mini-сard">
+						<div class="mini-сard-photo">
+							<img src="img/150x100.png" alt="photo" width="150" height="100">
+						</div>
+						<h3 class="mini-сard-name">Перфоратор BOSCH BFG 9000</h3>
+						<p class="price-old">32500 Р.</p>
+						<p class="price">25500 Р.</p>			
+					</article>
+
+					<article  class="mini-сard">
+						<div class="mini-сard-photo">
+							<img src="img/150x100.png" alt="photo" width="150" height="100">
+						</div>
+						<h3 class="mini-сard-name">Перфоратор BOSCH BFG 9000</h3>
+						<p class="price">25500 Р.</p>			
+					</article>
+
+					<div class="paginator">
+						<a href="#1">1</a>
+						<a href="#2">2</a>
+						<a href="#3">3</a>
+						<a href="#next">СЛЕДУЮЩАЯ</a>
 					</div>
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-					<img src="img/150x100.png" alt="logo-manufacturers" width="150" height="100">
-				</section>	
-
-				<section class="main-services">
-					<h2>Сервисы</h2>
-					<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-					<img src="img/150x100.png" alt="img-services" width="150" height="100">			
-					<b>Доставка</b>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
-					<img src="img/150x100.png" alt="img-delivery" width="150" height="100">	
-				</section>		
-
-				<section class="main-company">
-					<h2>КОМПАНИЯ «Техномарт»</h2>
-					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах. Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-						<ul class="delivery-company">
-							<li>Деловые линии</li>
-							<li>Автотрейдинг</li>
-							<li>ЖелДорЭкспедиция</li>
-						</ul>
-					<button class="btn-company" type="submit">Подробнее о компании</button>
-				</section>	
-								
-				<section class="main-contacts">
-					<h2>КОНТАКТЫ</h2>
-					<p>Вы можете забрать товар сами, заехав в наш офис:</p>		
-					<img src="img/150x100.png" alt="img-contacts" width="150" height="100">	
-					<button class="btn-mail" type="submit">Заблудились? Напишите нам!!</button>		
-				</section>
 				
+				</div>			
 			</div>	
+		</div>
+			
+			<div class="info-block">
+				<h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+				<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			</div>			
+			
 		</main>	
 
     <div class="pre-footer">
@@ -268,4 +323,4 @@
       </div>
     </footer>
   </body>
-</html>
+</html>	
