@@ -1,0 +1,81 @@
+@font-face {
+	font-family: "PT Sans";
+	src:
+		local("PT Sans"),
+		url("../fonts/ptsans.woff") format("woff"),
+		url(https://fonts.googleapis.com/css?family=PT+Sans);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src:
+		local("PT Sans Bold"),
+		url("../fonts/ptsansbold.woff") format("woff"),
+		url(https://fonts.googleapis.com/css?family=PT+Sans:700);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Cuprum";
+	src:
+		local("Cuprum"),
+		url("../fonts/cuprum.woff") format("woff"),
+    url(https://fonts.googleapis.com/css?family=Cuprum);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Cuprum";
+	src:
+		local("Cuprum Italic"),
+		url("../fonts/cuprumitalic.woff") format("woff"),
+		url(https://fonts.googleapis.com/css?family=Cuprum:400italic);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+	font-family: "Cuprum";
+	src:
+		local("Cuprum Bold"),
+		url("../fonts/cuprumbold.woff") format("woff"),
+ 		url(https://fonts.googleapis.com/css?family=Cuprum:700);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Cuprum";
+	src:
+		local("Cuprum Bold Italic"),
+		url("../fonts/cuprumbolditalic.woff") format("woff"),
+		url(https://fonts.googleapis.com/css?family=Cuprum:700italic);
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+body {
+	font-size: 13px; 
+	line-height: 24px;
+	color: #000000;
+	font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;   
+}
+
+h1 {
+  font-size: 30px;
+	line-height: 36px; 
+	color: #32425c;
+  font-family: "Cuprum", "Arial", sans-serif;  
+	text-transform: uppercase;
+}
+
+.index-content-breadcrumbs {
+	text-transform: uppercase; 
+}
