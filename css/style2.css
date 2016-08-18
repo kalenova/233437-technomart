@@ -17,3 +17,8 @@ h1 {
 .index-content-breadcrumbs {
 	text-transform: uppercase; 
 }
+
+body {
+  background: #000000 url("../img/technomart-index.jpg") no-repeat 50% 3px;
+  background-size: 1200px auto;
+}
