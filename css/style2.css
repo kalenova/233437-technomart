@@ -18,7 +18,242 @@ h1 {
 	text-transform: uppercase; 
 }
 
+
+html,
 body {
-  background: #000000 url("../img/technomart-index.jpg") no-repeat 50% 3px;
+  min-width: 1122px;
+  min-height: 2249px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff url("../img/technomart-catalog.jpg") no-repeat 50% 0px;
   background-size: 1200px auto;
 }
+
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
+.first-header {
+ margin-top: -55px;
+margin-bottom: 35px;
+ background-color: rgba(238, 54, 67, 0.3);
+ /* Только для оформления сетки */
+ height: 42px;
+}
+
+
+.index-logo {
+  float: left;
+  width: 220px;
+	margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 42px;
+}
+
+.search-form {
+  float: left;
+  width: 220px;
+	margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 42px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.bookmarks {
+  float: left;
+  width: 140px;
+	margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 42px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.cart {
+  float: left;
+  width: 140px;
+	margin-right: 10px;
+  /* Только для оформления сетки */
+  min-height: 42px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.checkout {
+  float: right;
+  width: 150px;
+  /* Только для оформления сетки */
+  min-height: 42px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.promo-text {
+  float: left;
+  width: 300px;
+  margin-top: 0;
+	margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 80px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.contacts {
+  float: left;
+  width: 300px;
+	margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 80px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.user-block {
+  float: right;
+  width: 300px;
+  /* Только для оформления сетки */
+  min-height: 80px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.second-header {
+	margin-bottom: 22px;
+}
+
+
+.main-navigation {
+	margin-bottom: 120px;
+  /* Только для оформления сетки */
+  min-height: 60px;
+  background-color: rgba(238, 54, 67, 0.8);	
+}
+
+.info-block {
+ background-color: rgba(238, 54, 67, 0.3);	
+  /* Только для оформления сетки */
+  min-height: 245px;	
+}
+
+main h1 {
+	margin-bottom: 55px;
+}
+
+.index-content-filters {
+  float: left;
+  width: 220px;
+	margin-right: 20px;
+	margin-bottom: 35px;
+  /* Только для оформления сетки */
+  min-height: 1150px;
+  background-color: rgba(238, 54, 67, 0.8);	
+}
+
+.catalog {
+  float: right;
+  width: 700px;
+	margin-bottom: 35px;
+  /* Только для оформления сетки */
+  min-height: 1150px;
+  background-color: rgba(238, 54, 67, 0.8);		
+}
+
+
+.pre-footer {
+  /* Только для оформления сетки */
+  min-height: 190px;
+  background-color: rgba(238, 54, 67, 0.3);		
+}
+
+.footer-logo {
+  float: left;
+	margin-bottom: 10px;
+}
+
+.footer-navigation {
+  float: right;
+  width: 550px;
+	margin-bottom: 20px;
+  /* Только для оформления сетки */
+  min-height: 60px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.footer-contacts {
+  float: left;
+	margin-top: 0;
+  /* Только для оформления сетки */
+	width: 380px;
+  min-height: 60px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.catalog-navigation {
+  float: right;
+  width: 550px;
+  /* Только для оформления сетки */
+  min-height: 60px;
+  background-color: rgba(238, 54, 67, 0.8);
+}
+
+.main-footer {
+
+	/* Только для оформления сетки */
+  min-height: 110px;
+  background-color: rgba(55, 162, 63, 0.8);	
+}
+
+.footer-copyright {
+  float: left;
+  /* Только для оформления сетки */
+	width: 240px;
+	margin-right: 150px;
+  min-height: 80px;
+  background-color: rgba(27, 87, 41, 0.8);
+}
+
+.footer-social {
+  float: left;
+  /* Только для оформления сетки */
+	width: 150px;
+	margin-right: 100px;
+  min-height: 80px;
+  background-color: rgba(27, 87, 41, 0.8);
+}
+
+.footer-mail {
+  float: left;
+	margin-top: 0;
+  /* Только для оформления сетки */
+	width: 140px;
+  min-height: 80px;
+  background-color: rgba(27, 87, 41, 0.8);
+}
+
+.footer-development {
+  float: right;
+	margin-top: 0;
+  /* Только для оформления сетки */
+	width: 160px;
+  min-height: 80px;
+  background-color: rgba(27, 87, 41, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
