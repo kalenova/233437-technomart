@@ -371,30 +371,30 @@ margin-bottom: 56px;
 }
 
 .materials {
+  margin-bottom: 20px;
   float: left;
   box-sizing: border-box;
   width: 300px;
 	margin-right: 20px;
-	min-height: 125px;
+  padding-left: 23px;
+	min-height: 123px;  
+	position: relative;
+  background: #f6b22d;
+	background-image: url("../img/banner-materials.png");
+  background-repeat: no-repeat;
+  background-position: 213px 32px;	
+}
+
+.section-banners h3 {
+	padding-top: 23px;
   color: #ffffff;
+	margin: 0 0 11px 0;
   line-height: 30px;
   font-size: 24px;
   font-family: "Cuprum";	
-  padding-left: 23px;
-	padding-top: 23px;
-	position: relative;
-  background: #f6b22d;
 }
 
-.materials:before {
-  position: absolute;
-  background: red url("../img/spritesheet.png") no-repeat;
-  background-position: -162px -5px
-}
-
-.materials span{margin-right: 100px;}
-
-.materials a {
+.section-banners a {
   display: inline-block;
   box-sizing: border-box;
   padding: 7px 25px;
@@ -407,92 +407,286 @@ margin-bottom: 56px;
   color: #ffffff;
   text-decoration: none;
   background: rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
+  border-radius: 3px;
 }
 
-.sticker-new:before {
-  position: absolute;
-  top: 0;
+.section-banners .sticker-new::before {
+	top: 0;
   right: 0;
+}
+
+.sticker-new::before {
+  position: absolute;
+  top: -1px;
+  right: -1px;
   z-index: 10;
   width: 60px;
   height: 60px;
   content: '';
   background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -287px  ;
+  background-position: -25px -5px;
 }
 
 .instruments {
+  margin-bottom: 20px;
   float: left;
+  box-sizing: border-box;
   width: 300px;
 	margin-right: 20px;
-	margin-bottom: 20px;
-  /* Только для оформления сетки */
-  min-height: 125px;
-  background-color: rgba(238, 54, 67, 0.8);	
+  padding-left: 23px;
+	min-height: 123px;  
+	position: relative;
+  background: #4aafde;
+	background-image: url("../img/banner-instruments.png");
+  background-repeat: no-repeat;
+  background-position: 198px 34px;
 }
 
 .technics {
+  margin-bottom: 20px;
   float: left;
+  box-sizing: border-box;
   width: 300px;
-	margin-bottom: 20px;
-  /* Только для оформления сетки */
-  min-height: 125px;
-  background-color: rgba(238, 54, 67, 0.8);	
+	padding-left: 23px;
+	min-height: 123px;  
+	position: relative;
+  background: #cc79d1;
+	background-image: url("../img/banner-technics.png");
+  background-repeat: no-repeat;
+  background-position: 190px 32px;
+}
+
+.discounts {
+  margin-bottom: 20px;
+  float: right;
+  box-sizing: border-box;
+  width: 300px;
+  padding-left: 23px;
+	min-height: 123px;  
+	position: relative;
+  background: #85d179;
+	background-image: url("../img/banner-discounts.png");
+  background-repeat: no-repeat;
+  background-position: 195px 27px;
+}
+
+.delivery {
+  float: right;
+  box-sizing: border-box;
+  width: 300px;
+  padding-left: 23px;
+	min-height: 123px;  
+	position: relative;
+  background: #f6b22d;
+	background-image: url("../img/banner-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
+}
+
+.section-header {
+  box-sizing: border-box;
+	width: 100%;
+  padding: 0 26px;
+  min-height: 89px;
+  background-color: #f7f3ec;	
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  display: inline-block;
+  text-transform: uppercase;	
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Cuprum";
+  color: #32425c;
+}
+
+a.btn {
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+  box-sizing: border-box;
+  padding: 7px 54px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-family: "Cuprum";
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background: #ee3643;
+  border-radius: 3px;
+  border: none;
+}
+
+a.btn-open  {
+	position: absolute;
+  padding: 7px 48px;
+  z-index: 20;
+  top: 180px;
+  left: 25px;
 }
 
 .slider {
 	float: left;
   width: 620px;
-	margin-bottom: 20px;
-  /* Только для оформления сетки */
 
- 
+  position: relative;
+  min-height: 266px;
+  margin: 0 auto;
+  overflow: hidden;
+
+	margin-bottom: 52px; 
 }
 
-.discounts {
-  float: right;
-  width: 300px;
-	margin-bottom: 20px;
-  /* Только для оформления сетки */
-  min-height: 125px;
-  background-color: rgba(238, 54, 67, 0.8);	
+.slide {
+  box-sizing: border-box;
+	padding: 20px 25px;
+  width: 620px;
+  height: 266px;
+
+
+
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+
+  -webkit-transition: left 0.3s ease;
+     -moz-transition: left 0.3s ease;
+          transition: left 0.3s ease;
+
 }
 
-.delivery {
-  float: right;
-  width: 300px;
-	margin-bottom: 30px;
-  /* Только для оформления сетки */
-  min-height: 125px;
-  background-color: rgba(238, 54, 67, 0.8);	
+.slider h2 {
+	position: absolute;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-family: "Cuprum";
+	margin-bottom: 0;
+  margin-top: 0;
+  z-index: 20;
+  color: #ffffff;
 }
 
-.section-popular-goods .section-heading {
-  float: left; 
-  width: 100%;
-	margin-bottom: 20px;
-  /* Только для оформления сетки */
-  min-height: 90px;
-  background-color: rgba(238, 54, 67, 0.8);		
+.slider p {
+	position: absolute;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Cuprum";
+  top: 45px;
+  z-index: 20;
+  color: #ffffff;
 }
+
+.slider img {
+	position: absolute;	
+  left: 0;
+	top: 0;
+  z-index: 10;
+}
+
+.slider::before {
+  content: "\3c";
+  position: absolute;
+  top: 122px;
+  left: 25px;
+	font-family: "symbols-technomart";  
+	font-size: 45px;
+  color: #ffffff;
+  z-index: 40;
+  cursor: pointer;
+
+}
+
+.slider::after {
+  content: "\3e";
+  position: absolute;
+  top: 122px;
+  left: 579px;
+	font-family: "symbols-technomart";  
+	font-size: 45px;
+  color: #ffffff;
+  z-index: 40;
+  cursor: pointer;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  z-index: 20;
+
+  width: 200px;
+  margin-left: -100px;
+
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  left: 0;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(2),
+#btn-1:checked ~ .slides .slide:nth-child(3) {
+  left: 620px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(1) {
+  left: -620px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  left: 0;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(3) {
+  left: -620px;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+  background: #ee3643;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-popular-goods .section-content {
-  float: left; 
   width: 100%;
-	margin-bottom: 5px;
-  /* Только для оформления сетки */
-  min-height: 320px;
-  background-color: rgba(55, 162, 63, 0.8);		
-}
-
-.section-popular-manufacturers .section-heading {
-  float: left; 
-  width: 100%;
-	margin-bottom: 20px;
-  /* Только для оформления сетки */
-  min-height: 90px;
-  background-color: rgba(238, 54, 67, 0.8);		
+  min-height: 320px;	
 }
 
 .section-popular-manufacturers .section-content {
@@ -501,8 +695,18 @@ margin-bottom: 56px;
 	margin-bottom: 82px;
   /* Только для оформления сетки */
   min-height: 310px;
-  background-color: rgba(55, 162, 63, 0.8);		
+ 	
 }
+
+.section-popular-manufacturers img {
+	margin-right: 16px;
+  margin-bottom: 13px;
+}
+
+.section-popular-manufacturers img:nth-child(4n){
+  margin-right: 0;
+}
+
 
 .section-services {
   float: left; 
@@ -510,16 +714,14 @@ margin-bottom: 56px;
 	margin-bottom: 60px;
   /* Только для оформления сетки */
   min-height: 520px;
-  background-color: rgba(238, 54, 67, 0.3);		
+  background-color: #f2f6f8;		
 }
 
 .section-services .section-heading {
   float: left; 
   width: 100%;
 	margin-bottom: 130px;
-  /* Только для оформления сетки */
-  min-height: 90px;
-  background-color: rgba(238, 54, 67, 0.8);		
+ 		
 }
 
 
@@ -528,17 +730,7 @@ margin-bottom: 56px;
   width: 200px;
 	margin-right: 80px;
 	margin-top: 0;
-  /* Только для оформления сетки */
-  min-height: 260px;
-  background-color: rgba(55, 162, 63, 0.8);		
-}
-
-.section-services .text-services {
-  float: left; 
-  width: 320px;
-	/* Только для оформления сетки */
-  min-height: 260px;
-  background-color: rgba(55, 162, 63, 0.8);		
+		
 }
 
 .section-company {
@@ -638,11 +830,190 @@ margin-bottom: 56px;
   background-color: rgba(27, 87, 41, 0.8);
 }
 
+__________________________
+
+.catalog-items {
+  font-size: 0;
+  width: 700px;
+  margin: 20px auto; /* для оформления демонстрации */
+}
+
+.catalog-item {
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 219px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.catalog-item:nth-child(4n){
+  margin-right: 0;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: #fff; 
+}
+
+.actions .buy,
+.actions .bookmark {
+  font-family: "Cuprum";
+  font-size: 14px;
+  display: block;
+  width: 135px;
+  margin: 0 auto 7px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #63a63e;
+}
+
+.actions .buy {
+  box-shadow: inset 0 -3px 0 #367315;
+}
+
+.actions .bookmark {
+  width: 129px;
+  padding: 7px 0;
+  color: #63a63e;
+  border: 3px solid #63a63e;
+  background-color: #fff;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+
+.catalog-item-image {
+  margin: 0 auto;
+  margin-top: 6px; 
+  width: 184px;
+  height: 130px;
+  overflow: hidden;
+}
+
+.catalog-item-image img {
+  max-width: 100%;
+}
+
+.catalog-item .title {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 42px;
+  margin-bottom: 7px;
+  padding: 0 25px;
+  text-transform: none;
+  font-family: "PT Sans";
+  color: #000000;
+}
+
+.catalog-item .discount {
+  min-height: 20px;
+  margin-bottom: 7px;
+  font-size: 17px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.catalog-item .price {
+  position: relative;
+  font-size: 17px;
+  width: 80px;
+  margin: 0 auto 20px;
+  padding: 8px 30px;
+  color: #fff;
+  border-radius: 3px;
+  background: #ee3643;
+}
+
+.catalog-item .price:after {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 20px solid #fff;
+  border-left-color: #ee3643;
+}
+__________________________________________________
+
+.tabs {
+  float:left;
+	margin: 0 auto;
+	width: 240px; 
+}
+
+.tabs label {
+	color: #555;
+	cursor: pointer;
+	display: block;
+  margin: 0;
+  position: relative;
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.tabs input {
+	position: absolute;
+	left: -9999px;
+}
+
+#tab_1:checked  ~ #tab_l1,
+#tab_2:checked  ~ #tab_l2,
+#tab_3:checked  ~ #tab_l3 {
+	background: #fff;
+	border-color: #fff;
+	top: 0;
+	z-index: 3;
+   margin: 0; 
+}
+
+.tabs_cont {
+	position: relative;
+  float: right;
+  width: 620px;
+	height: 230px;
+	background-color: aqua;
+}
 
 
 
 
-
+.tabs_cont > div {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	opacity: 0;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3 {
+	position: static;
+	left: 0;
+	opacity: 1;
+ 
+}
 
 
 

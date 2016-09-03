@@ -96,12 +96,31 @@
 						<div class="instruments"><h3>Инструмент</h3><a href="#">На все случаи</a></div>
 						<div class="technics"><h3>Техника</h3><a href="#">Для стройки</a></div>						
 						
-						<div class="slider"><!--
-							<b>Перфораторы</b>
-							<p>Настроящие мужские игрушки</p>
-							<button class="btn-open" type="submit">ОТКРЫТЬ КАТАЛОГ</button>-->
-							<img src="img/slider-1.jpg" alt="slider-img" width="620" height="266">
-						</div>
+						<div class="slider">
+							<input type="radio" id="btn-1" name="toggle" checked>
+							<input type="radio" id="btn-2" name="toggle">
+							<div class="slider-controls">
+								<label for="btn-1"></label>
+								<label for="btn-2"></label>
+							</div>
+							<div class="slides">
+								<div class="slide">
+										<h2>Перфораторы</h2>
+										<p>Настроящие мужские игрушки</p>
+										<a class="btn btn-open" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+										<img src="img/slider-1.jpg" alt="slider-img" width="620" height="266">
+									</div>
+
+									<div class="slide">
+										<h2>Дрели</h2>
+										<p>Соседям на радость!</p>
+										
+										<a class="btn btn-open" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+										<img src="img/slider-2.jpg" alt="slider-img" width="620" height="266">
+									</div>
+							</div>
+						</div>				
+
 						
 						<div class="discounts"><h3>Скидки 50%</h3><a href="#">На 350 товаров</a></div>	
 						<div class="delivery"><h3>Доставка</h3><a href="#">Бесплатно</a></div>			
@@ -115,43 +134,43 @@
 					</header>
 					
 					<div class="section-content">
-						<article class="catalog-item sticker-new">
+						<article class="catalog-item">
 							<div class="actions">
 								<a href="#" class="buy">Купить</a>
 								<a href="#" class="bookmark">В закладки</a>
 							</div>
 							<div class="catalog-item-image">
 								<img width="184" height="130" src="img/photo-bosh-bfg9000.jpg" alt="Перфоратор BOSCH BFG 3000">
+							</div>
+							<h1 class="title">Перфоратор BOSCH BFG 9000</h1>
+							<div class="discount">32 500 Р.</div>
+							<div class="price">25 500 Р.</div>
+						</article>
+						
+						<article class="catalog-item">
+							<div class="actions">
+								<a href="#" class="buy">Купить</a>
+								<a href="#" class="bookmark">В закладки</a>
+							</div>
+							<div class="catalog-item-image">
+								<img width="184" height="130" src="img/photo-bosh-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000">
 							</div>
 							<h1 class="title">Перфоратор BOSCH BFG 3000</h1>
 							<div class="discount">22 500 Р.</div>
 							<div class="price">15 500 Р.</div>
 						</article>
 						
-						<article class="catalog-item sticker-new">
+						<article class="catalog-item">
 							<div class="actions">
 								<a href="#" class="buy">Купить</a>
 								<a href="#" class="bookmark">В закладки</a>
 							</div>
 							<div class="catalog-item-image">
-								<img width="184" height="130" src="img/photo-bosh-bfg9000.jpg" alt="Перфоратор BOSCH BFG 3000">
+								<img width="184" height="130" src="img/photo-bosh-bfg6000.jpg" alt="Перфоратор BOSCH BFG 3000">
 							</div>
-							<h1 class="title">Перфоратор BOSCH BFG 3000</h1>
-							<div class="discount">22 500 Р.</div>
-							<div class="price">15 500 Р.</div>
-						</article>
-						
-						<article class="catalog-item sticker-new">
-							<div class="actions">
-								<a href="#" class="buy">Купить</a>
-								<a href="#" class="bookmark">В закладки</a>
-							</div>
-							<div class="catalog-item-image">
-								<img width="184" height="130" src="img/photo-bosh-bfg9000.jpg" alt="Перфоратор BOSCH BFG 3000">
-							</div>
-							<h1 class="title">Перфоратор BOSCH BFG 3000</h1>
-							<div class="discount">22 500 Р.</div>
-							<div class="price">15 500 Р.</div>
+							<h1 class="title">Перфоратор BOSCH BFG 6000</h1>
+							<div class="discount">30 500 Р.</div>
+							<div class="price">25 500 Р.</div>
 						</article>
 
 						<article class="catalog-item sticker-new">
@@ -160,11 +179,11 @@
 								<a href="#" class="bookmark">В закладки</a>
 							</div>
 							<div class="catalog-item-image">
-								<img width="184" height="130" src="img/photo-bosh-bfg9000.jpg" alt="Перфоратор BOSCH BFG 3000">
+								<img width="184" height="130" src="img/photo-bosh-bfg2000.jpg" alt="Перфоратор BOSCH BFG 3000">
 							</div>
 							<h1 class="title">Перфоратор BOSCH BFG 3000</h1>
-							<div class="discount">22 500 Р.</div>
-							<div class="price">15 500 Р.</div>
+							<div class="discount"></div>
+							<div class="price">12 500 Р.</div>
 						</article>
 					</div>
 				</section>
@@ -175,7 +194,7 @@
 						<h2 class="section-heading">Популярные производители:</h2>
 						<a class="btn" href="#">Все производители</a>
 					</header>
-					<div class="section-content"><!--
+					<div class="section-content">
 						<img src="img/manufacturers-bosh.png" alt="logo-manufacturers" width="220" height="145">
 						<img src="img/manufacturers-makita.png" alt="logo-manufacturers" width="220" height="145">
 						<img src="img/manufacturers-dewalt.png" alt="logo-manufacturers" width="220" height="145">
@@ -183,58 +202,79 @@
 						<img src="img/manufacturers-hitachi.png" alt="logo-manufacturers" width="220" height="145">
 						<img src="img/manufacturers-lg.png" alt="logo-manufacturers" width="220" height="145">
 						<img src="img/manufacturers-aeg.png" alt="logo-manufacturers" width="220" height="145">
-						<img src="img/manufacturers-metabo.png" alt="logo-manufacturers" width="220" height="145">-->
+						<img src="img/manufacturers-metabo.png" alt="logo-manufacturers" width="220" height="145">
 					</div>
 				</section>	
+			</div>
 
 				<section class="section section-services">
-					<h2 class="section-heading">Сервисы</h2>
-					<div class="section-content">
-						<!--<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>-->
-						<ul class="tab-services">
-							<li>
-								<a href="#">Доставка</a>
-							</li>
-							<li>
-								<a href="#">Гарантия</a>
-							</li>
-							<li>
-								<a href="#">Кредит</a>
-							</li>
-						</ul>		
-						<div class="text-services">	
-							<b>Доставка</b>
-							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+					<div class="container clearfix">
+						<div class="section-content">
+							<h2 class="section-heading">Сервисы</h2>
+							<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+							<div class="tabs">
+								<input id="tab_1" type="radio" name="tab" checked="checked" />
+								<input id="tab_2" type="radio" name="tab" />
+								<input id="tab_3" type="radio" name="tab" />
+
+								<label for="tab_1" id="tab_l1">Доставка</label>
+								<label for="tab_2" id="tab_l2">Гарантия</label>
+								<label for="tab_3" id="tab_l3">Кредит</label>
+								<div style="clear:both"></div>
+
+								<div class="tabs_cont">
+									<div id="tab_c1">
+										<b>Доставка1</b>
+										<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+										<img class="img-services" src="img/delivery.png" alt="img-delivery" width="468" height="261">
+									</div>
+
+									<div id="tab_c2">
+										<b>Доставка2</b>
+										<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+										<img class="img-services" src="img/delivery.png" alt="img-delivery" width="468" height="261">
+									</div>
+
+									<div id="tab_c3">
+										<b>Доставка3</b>
+										<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+										<img class="img-services" src="img/delivery.png" alt="img-delivery" width="468" height="261">
+									</div>
+								</div>
+							</div>	
+
 						</div>
-						<!--<img class="img-services" src="img/delivery.png" alt="img-delivery" width="468" height="261">-->	
 					</div>
 				</section>		
+       
+				<div class="container clearfix">	
+					<section class="section section-company">
 
-			
-				<section class="section section-company">
-					<h2 class="section-heading">КОМПАНИЯ «Техномарт»</h2>
-					<div class="section-content">
-						<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах. Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-							<ul class="delivery-company">
-								<li>Деловые линии</li>
-								<li>Автотрейдинг</li>
-								<li>ЖелДорЭкспедиция</li>
-							</ul>
-						<button class="btn" type="submit">Подробнее о компании</button>
-					</div>
-				</section>	
+						<div class="section-content">
+							<h2 class="section-heading">КОМПАНИЯ «Техномарт»</h2>
+								<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах. Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+									<ul class="delivery-company">
+										<li>Деловые линии</li>
+										<li>Автотрейдинг</li>
+										<li>ЖелДорЭкспедиция</li>
+									</ul>
+							<a class="btn" href="#">Подробнее о компании</a>
+						</div>
 
-				<section class="section section-contacts">
-					<h2 class="section-heading">КОНТАКТЫ</h2>
-					<div class="section-content">
-						<p>Вы можете забрать товар сами, заехав в наш офис:</p>		
-						<img src="img/map.png" alt="img-services" width="300" height="158">	
-						<button class="btn" type="submit">Заблудились? Напишите нам!!</button>		
-					</div>
-				</section>
-
+					</section>	
 				
-			</div>
+					<section class="section section-contacts">
+						<h2 class="section-heading">КОНТАКТЫ</h2>
+						<div class="section-content">
+							<p>Вы можете забрать товар сами, заехав в наш офис:</p>		
+							<img src="img/map.png" alt="img-services" width="300" height="158">	
+							<a class="btn" href="#">Заблудились? Напишите нам!!</a>		
+						</div>
+					</section>
+
+				</div>
+			
 		</main>	
 
 		<footer>
