@@ -3,95 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-		<link href="css/style2.css" rel="stylesheet">
+ 		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/style.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="main-header">
-			
-			<div class="container clearfix">
-
-				<div class="index-logo">
-					<img src="img/index-logo.png" alt="logo" width="220" height="47">
-				</div>
-
-				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-					<input type="text" name="search" value="" placeholder="Поиск:">
-				</form>
-
-				<div class="bookmarks">
-					Закладки: 0
-				</div>
-
-				<div class="cart">
-					Корзина: 0
-				</div>			
-
-				<div class="checkout">
-					<a class="checkout-btn" href="#">Оформить заказ</a>
-				</div>
-		
-      </div>
-      
+    
 			<div class="first-header">
+				<div class="container clearfix">
+
+					<div class="index-logo">
+						<a href="index.html"><img src="img/index-logo.png" alt="logo" width="220" height="47"></a>
+					</div>
+
+          <form class="menu-top-search" action="#">
+            <input id="menu-top-search-box" name="search" type="text">
+            <label for="menu-top-search-box">Поиск:</label>
+          </form>
+
+					<div class="bookmarks">
+						Закладки: 0
+					</div>
+
+					<div class="cart">
+						Корзина: 0
+					</div>			
+
+					<div class="checkout">
+						<a class="checkout-btn" href="#">Оформить заказ</a>
+					</div>
+
+				</div>
+      
+		
 			</div>
 					
 			<div class="second-header">
-				<div class="container clearfix">
 
-					<h1 class="promo-text"><!--Интернет-магазин строительных материалов и инструментов для ремонта--></h1>
+				<div class="container clearfix">
+					<h1 class="promo-text">Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
 
 					<div class="contacts">
 						<a class="contacts-phone" href="#">+7 (812) 555-05-55</a>
-						<p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<span class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 					</div>
 
 					<div class="user-block">
 						<a class="enter" href="#">Войти</a>
 						<a class="registration" href="#">Регистрация</a>
 					</div>
-
 				</div>
-			</div>
-		</header>
 
-		<div class="container clearfix">
-			<nav class="main-navigation">
-				<ul class="main-menu"><!--
-					<li>
-						<a href="#">Главная</a>
-					</li>
-					<li>
-						<a href="#">Компания</a>
-					</li>
-					<li>
-						<a href="#">Каталог</a>
-					</li>
-					<li>
-						<a href="#">Новости</a>
-					</li>
-					<li>
-						<a href="#">Спецпредложения</a>
-					</li>
-					<li>
-						<a href="#">Доставка</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>-->
-				</ul>
-			</nav>
-		</div>	
+				<div class="container clearfix">
+					<nav class="main-navigation">
+						<ul class="main-menu">
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#">Компания</a>
+							</li>
+							<li>
+								<a href="#">Каталог</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Спецпредложения</a>
+							</li>
+							<li>
+								<a href="#">Доставка</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				</div>
+
+		</header>
 		
 		<main>	
 		
 			<div class="index-content">
 				<div class="container clearfix">
-					<ul class="index-content-breadcrumbs"><!--
+					<ul class="index-content-breadcrumbs">
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Инструмент</a></li>
-						<li><a href="#">Перфораторы</a></li>-->
+						<li><a href="#">Перфораторы</a></li>
 					</ul> 
 				
 				<h1>ПЕРФОРАТОРЫ</h1>
@@ -255,7 +258,7 @@
 		</main>	
 
 
-		<footer>
+	<footer>
 	  				
 			<div class="pre-footer">
 				<div class="container clearfix">	
@@ -263,12 +266,12 @@
 
 							<div class="footer-logo">
 								<a href="index.html">
-									<img src="img/index-logo.png" alt="logo" width="220" height="47">
+									<img src="img/index-logo-footer.png" alt="logo" width="220" height="68">
 								</a>
 							</div>
 
-							<nav class="footer-navigation">Компания Новости Каталог Доставка Контакты
-								<ul><!--
+							<nav class="footer-navigation">
+								<ul>
 									<li>
 										<a href="#">Компания</a>
 									</li>
@@ -283,7 +286,7 @@
 									</li>
 									<li>
 										<a href="#">Контакты</a>
-									</li>-->
+									</li>
 								</ul>
 							</nav>
 
@@ -295,7 +298,7 @@
 							+7 (812) 555-05-55
 							</p>
 
-							<nav class="catalog-navigation">Материалы Техника Инструмент Спецпредложения<!--
+							<nav class="catalog-navigation">
 								<ul>
 									<li>
 										<a href="#">Материалы</a>
@@ -309,7 +312,7 @@
 									<li>
 										<a href="#">Спецпредложения</a>
 									</li>
-								</ul>-->
+								</ul>
 							</nav>
 
 						</div>

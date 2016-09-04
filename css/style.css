@@ -118,46 +118,153 @@ body {
  font-family: "Cuprum";  
 }
 
-
 .index-logo {
   float: left;
   width: 220px;
+  height: 47px;
 	margin-right: 18px;
+	background-image: url("../img/index-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;	
 }
 
-.search-form {
+.index-logo:hover {
+	background-image: url("../img/index-logo-focus.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;	
+}
+
+.index-logo:active {
+	background-image: url("../img/index-logo-click.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;	
+}
+
+/*
+.menu-top-search {
+  position: relative;
+  display: inline-block;
   position: relative;
   float: left;
   width: 220px;
 	margin-right: 20px;
-	padding: 8px 0 0 30px;
+	padding: 0 0 0 30px;
 }
 
-.search-form label {
-	margin-right: 5px;
-}
-
-.search-form input {
-	background-color: #293449;
-	color: rgba(255, 255, 255, 0.3);
-	border: 1px solid #293449;
-}
-
-.search-form input:focus {
-	 border: 1px solid #6a7180;
-}
-
-.search-form::before {
+.menu-top-search::before {
   content: "\1f50d";
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 0;
   width: 18px;
   height: 18px;
 	font-family: "symbols-technomart";  
 	font-size: 16px;
-  color: rgba(255, 255, 255, 0.3);
+  color: #6a7180;
 }
+
+.menu-top-search:hover::before {
+  color: white;
+}
+
+.menu-top-search input {
+  height: 42px;
+  margin-left: -50px;
+  box-sizing: border-box;
+  width: 270px;
+  border: none;
+  background: #293449;
+  padding-left: 60px;
+  padding-top: 4px; 
+  color: #293449; 
+}
+
+.menu-top-search input:focus {
+  opacity: 1;
+  background: #FFFFFF;
+}
+
+.menu-top-search label {
+  margin-left: 40px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
+.menu-top-search input[type=text]:focus +label {
+  display: none;
+}
+*/
+
+
+.menu-top-search {
+  position: relative;
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 220px;
+	margin-right: 20px;
+	padding: 0 0 0 30px;
+}
+
+.menu-top-search label::before {
+  content: "\1f50d";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+	font-family: "symbols-technomart";  
+	font-size: 16px;
+  color: #6a7180;
+}
+
+.menu-top-search:hover label::before {
+  color: white;
+}
+
+.menu-top-search input:focus ~ label::before {
+    color: red;
+}
+
+.menu-top-search input {
+  height: 42px;
+  margin-left: -50px;
+  box-sizing: border-box;
+  width: 270px;
+  border: none;
+  background: #293449;
+  padding-left: 60px;
+  padding-top: 4px; 
+  color: #FFFFFF;
+}
+
+input::-webkit-input-placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.menu-top-search input:focus {
+  opacity: 1;
+  background: #FFFFFF;
+    color: #000000;
+}
+
 
 .bookmarks {
   position: relative;
@@ -165,6 +272,7 @@ body {
   width: 104px;
 	margin-right: 20px;
 	padding: 8px 0 0 26px;
+  cursor: pointer;
 }
 
 .bookmarks::before {
@@ -176,7 +284,11 @@ body {
   height: 18px;
 	font-family: "symbols-technomart";  
 	font-size: 16px;
-  color: rgba(255, 255, 255, 0.3);
+  color: #6a7180;
+}
+
+.bookmarks:hover::before {
+  color: white;
 }
 
 .cart {
@@ -185,6 +297,7 @@ body {
   width: 90px;
 	margin-right: 10px;
 	padding: 8px 0 0 30px;
+  cursor: pointer;
 }
 
 .cart::before {
@@ -196,7 +309,12 @@ body {
   height: 18px;
 	font-family: "symbols-technomart";  
 	font-size: 16px;
-  color: rgba(255, 255, 255, 0.3);
+  color: #6a7180;
+}
+
+.cart:hover::before {
+  text-decoration: none; 
+  color: white;
 }
 
 .checkout {
@@ -209,9 +327,21 @@ body {
   background-color: #63a63e;
 }
 
+.checkout:hover {
+  background-color: #5fbb2d;	
+}
+
+.checkout:active {
+	background-color: #518534;	
+}
+
 .checkout a {
 	color: #ffffff;
   text-decoration: none;
+}
+
+.checkout a:active  {
+  color: #aac39b;
 }
 
 .promo-text {
@@ -300,6 +430,22 @@ body {
  	margin-right: 7px;
 }
 
+.user-block a:hover {
+  color: #ee3643;
+}
+
+.user-block a:active {
+  color: #c5c5c5;
+}
+
+.user-block a.enter:hover::before {
+  color: #32425c;
+}
+
+.user-block a.enter:active::before {
+  color: #c5c5c5;
+}
+
 .user-block a.enter::before {
   content: "\2386";
   position: absolute;
@@ -367,7 +513,11 @@ margin-bottom: 56px;
 }
 
 .main-navigation a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #293449;
+}
+
+.main-navigation a:hover {
+  color: #777d88;
 }
 
 .materials {
@@ -726,9 +876,7 @@ a.btn-open  {
 
 .section-services {
   float: left; 
-  width: 100%;
-  /* Только для оформления сетки */
-  min-height: 520px;
+  width: 100%; 
   background-color: #f2f6f8;		
 }
 
@@ -747,24 +895,73 @@ a.btn-open  {
 .section-company {
   float: left; 
   width: 540px;
+  margin-top: 50px;
 	margin-bottom: 80px;
-  /* Только для оформления сетки */
-  min-height: 400px;
-  background-color: rgba(238, 54, 67, 0.3);		
+  min-height: 400px;	
+}
+
+.section-company h2 {
+	font-size: 30px;
+  text-transform: uppercase;
+  line-height: 36px;
+  font-family: "Cuprum";
+  color: #000000; 
+}
+
+.section-company p {
+	margin-bottom: 22px;
+}
+
+.section-company ul {
+margin-top: -10px;
+margin-left: -39px;
+}
+
+.section-company li {
+  list-style: none;
+  padding-left: 36px;
+  background: url(../img/ul-line.jpg) -0 20px no-repeat;	
+	font-size: 18px;
+  line-height: 39px;
+  font-family: "Cuprum";
+  color: #000000;
+}
+
+.section-company a {
+	float: left;
+  margin-top: 17px;
+	padding: 7px 41px;
+
 }
 
 .section-contacts {
   float: right; 
   width: 300px;
-  /* Только для оформления сетки */
   min-height: 400px;
-  background-color: rgba(238, 54, 67, 0.3);		
+  margin-top: 50px;
+}
+
+.section-contacts h2 {
+	font-size: 30px;
+  text-transform: uppercase;
+  line-height: 36px;
+  font-family: "Cuprum";
+  color: #000000; 
+}
+
+.section-contacts img {
+	margin-top: 40px;
+}
+
+.section-contacts a {
+  margin-top: 33px;
+	width: 100%
 }
 
 .pre-footer {
-  /* Только для оформления сетки */
+  margin-top: 5px;
   min-height: 190px;
-  background-color: rgba(238, 54, 67, 0.3);		
+  background-color: #32425c;		
 }
 
 .footer-logo {
@@ -774,71 +971,199 @@ a.btn-open  {
 
 .footer-navigation {
   float: right;
-  width: 550px;
+  width: 650px;
 	margin-bottom: 20px;
-  /* Только для оформления сетки */
-  min-height: 60px;
-  background-color: rgba(238, 54, 67, 0.8);
+  font-family: "Cuprum";
 }
 
-.footer-contacts {
-  float: left;
-	margin-top: 0;
-  /* Только для оформления сетки */
-	width: 380px;
-  min-height: 60px;
-  background-color: rgba(238, 54, 67, 0.8);
+.footer-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  float: right;
+}
+
+.footer-navigation li {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+.footer-navigation a {  
+  display: block;
+  padding: 38px 0 0 59px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline; 
 }
 
 .catalog-navigation {
   float: right;
-  width: 550px;
-  /* Только для оформления сетки */
-  min-height: 60px;
-  background-color: rgba(238, 54, 67, 0.8);
+  width: 600px;
+  font-family: "Cuprum";
 }
 
-.main-footer {
+.catalog-navigation ul {  
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+	float: right;
+}
 
+.catalog-navigation li {
+  display: inline-block;
+  font-size: 18px; 
+}
+
+.catalog-navigation a {  
+  display: block;
+
+  padding: 8px 0 0 0;
+  margin-left: 59px;
+  color: #ffd180;
+  text-decoration: none;
+
+}
+
+.catalog-navigation a:hover {
+  text-decoration: underline; 
+}
+
+.footer-contacts {
+  float: left;
+	margin-top: 10px;
+	width: 330px;
+  min-height: 60px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Cuprum";
+  color: white;
+}
+
+
+.main-footer {
 	/* Только для оформления сетки */
   min-height: 110px;
-  background-color: rgba(55, 162, 63, 0.8);	
+  background-color: #293449;	
 }
 
 .footer-copyright {
   float: left;
-  /* Только для оформления сетки */
 	width: 240px;
 	margin-right: 150px;
-  min-height: 80px;
-  background-color: rgba(27, 87, 41, 0.8);
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Cuprum";
+  color: white;
+  margin-top: 38px;
 }
 
 .footer-social {
   float: left;
-  /* Только для оформления сетки */
 	width: 150px;
 	margin-right: 100px;
-  min-height: 80px;
-  background-color: rgba(27, 87, 41, 0.8);
+  margin-top: 38px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  font-size: 0;
+  border-radius: 50%;
+  vertical-align:middle;  
+  text-align: center;
+}
+
+.social-btn-vk {
+  background: #212a3a;
+  position: relative;
+}
+
+.social-btn:hover{
+  background: #ee3643;
+}
+
+.social-btn-vk::before {
+  content: "\76";
+  position: absolute;
+	font-family: "symbols-technomart";  
+	font-size: 18px;
+  left: 12px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.social-btn-fb {
+  background: #212a3a;
+  position: relative;
+}
+
+.social-btn-fb::before {
+  content: "\66";
+  position: absolute;
+	font-family: "symbols-technomart";  
+	font-size: 18px;
+  left: 15px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.social-btn-inst {
+  background: #212a3a;
+  position: relative;
+}
+
+.social-btn-inst::before {
+  content: "\1f4f7";
+  position: absolute;
+	font-family: "symbols-technomart";  
+	font-size: 18px;
+  left: 12px;
+  line-height: 42px;
+  color: #ffffff;
 }
 
 .footer-mail {
   float: left;
-	margin-top: 0;
-  /* Только для оформления сетки */
-	width: 140px;
-  min-height: 80px;
-  background-color: rgba(27, 87, 41, 0.8);
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Cuprum";
+  color: white;
+  margin-top: 38px;
+}
+
+.footer-mail a {
+	color: #ffd180;
+  text-decoration: none;
+}
+
+.footer-mail a:hover {
+  text-decoration:underline;
 }
 
 .footer-development {
   float: right;
-	margin-top: 0;
-  /* Только для оформления сетки */
-	width: 160px;
-  min-height: 80px;
-  background-color: rgba(27, 87, 41, 0.8);
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Cuprum";
+  color: white;
+  margin-top: 38px;
+  padding-right: 15px;
+}
+
+.footer-development a {
+	color: #ffd180;
+  text-decoration: none;
+}
+
+.footer-development a:hover {
+  text-decoration:underline;
 }
 
 .catalog-items {
@@ -967,6 +1292,7 @@ a.btn-open  {
   position: relative;
 	margin: 0 auto;
   margin-top: 57px;
+  margin-bottom: -130px;
 	width: 240px; 
 }
 
