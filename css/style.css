@@ -458,8 +458,8 @@ input:-ms-input-placeholder {
 }
 
 .user-block li {
-	display: inline-block;
-  float: left;
+	float: left;
+  display: inline-block;
   box-sizing: border-box;
   margin-left: -22px;
   margin-top: 5px;
@@ -471,6 +471,26 @@ input:-ms-input-placeholder {
   color: #32425c;
   text-decoration: underline; 
   cursor: pointer;
+  position: relative;
+}
+
+.ul-block:last-child ::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #32425c;
+    border-radius: 50%;
+    top: 9px;
+    right: 170px;
+}
+
+.user-block li:hover {
+	color: #ee3643;
+}
+
+.user-block li:active {
+	color: #c5cad0;
 }
 
 .second-header {
