@@ -496,7 +496,7 @@ input:-ms-input-placeholder {
 .second-header {
 background-color: #f1f5f7;
 padding: 46px 0 15px;
-margin-bottom: 56px;
+margin-bottom: 19px;
 }
 
 .main-navigation {
@@ -551,20 +551,24 @@ margin-bottom: 56px;
   float: left;
   box-sizing: border-box;
   width: 300px;
-	margin-right: 20px;
+  margin-right: 20px;
   padding-left: 23px;
-	min-height: 123px;  
-	position: relative;
+  min-height: 123px;  
+  position: relative;
   background: #f6b22d;
-	background-image: url("../img/banner-materials.png");
+  background-image: url("../img/banner-materials.png");
   background-repeat: no-repeat;
   background-position: 213px 32px;	
 }
 
+.section-banners  {
+margin-top: 56px;	
+}
+
 .section-banners h3 {
-	padding-top: 23px;
+  padding-top: 23px;
   color: #ffffff;
-	margin: 0 0 11px 0;
+  margin: 0 0 11px 0;
   line-height: 30px;
   font-size: 24px;
   font-family: "Cuprum";	
@@ -669,7 +673,7 @@ margin-bottom: 56px;
 
 .section-header {
   box-sizing: border-box;
-	width: 100%;
+  width: 100%;
   padding: 0 26px;
   min-height: 89px;
   background-color: #f7f3ec;	
@@ -684,6 +688,25 @@ margin-bottom: 56px;
   font-family: "Cuprum";
   color: #32425c;
 }
+
+.section-header.inner {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 27px;
+  min-height: 89px;
+  background-color: #f2f6f8;	
+  margin-bottom: 20px;
+}
+
+.section-header.inner h1 {
+  display: inline-block;
+  text-transform: uppercase;	
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Cuprum";
+  color: #32425c;
+}
+
 
 a.btn {
   display: inline-block;
@@ -1497,9 +1520,123 @@ margin-left: -39px;
 #tab_3:checked ~ .tabs_cont #tab_c3 {
 	position: static;
 	left: 0;
-	opacity: 1;
- 
+	opacity: 1; 
 }
+
+/*Элементы внутренней*/
+
+.index-content-breadcrumbs {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  margin-left: 17px;
+}
+
+.index-content-breadcrumbs li {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  vertical-align: top;
+}
+
+.index-content-breadcrumbs a.nav {
+  display: block;
+  padding-left: 40px;  
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+
+.index-content-breadcrumbs a.home {
+  position: relative;
+}
+
+.index-content-breadcrumbs a.home::before {
+  content: "\3e";
+  content: "\1f3e0";
+  position: absolute;
+  top: -2px;
+  left: -17px;
+  width: 5px;
+  height: 5px;
+  font-family: "symbols-technomart";  
+  font-size: 16px;
+  color: #c1c6ce;
+}
+
+.index-content-breadcrumbs a.nav::before {
+  content: "\3e";
+  position: absolute;
+  top: -2px;
+  left: 14px;
+  width: 5px;
+  height: 5px;
+  font-family: "symbols-technomart";  
+  font-size: 14px;
+  color: #c1c6ce;
+}
+
+
+.index-content-filters {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  /* Только для оформления сетки */
+  min-height: 1150px;
+  background-color: rgba(238, 54, 67, 0.8);	
+}
+
+.head-filters {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 27px;
+  min-height: 89px;
+  background-color: #f2f6f8;	
+  margin-bottom: 20px;
+}
+
+.head-filters p {
+  display: inline-block;
+  text-transform: uppercase;	
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Cuprum";
+  color: #32425c;
+}
+
+
+
+
+.catalog {
+  float: right;
+  width: 700px;
+	margin-bottom: 35px;
+  /* Только для оформления сетки */
+  min-height: 1150px;
+  background-color: rgba(238, 54, 67, 0.8);		
+}
+
+.info-block {
+   margin-bottom: 68px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
