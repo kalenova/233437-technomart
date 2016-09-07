@@ -67,7 +67,7 @@
 								<a href="#">Компания</a>
 							</li>
 							<li>
-								<a href="#">Каталог</a>
+								<a href="catalog.html">Каталог</a>
 							</li>
 							<li>
 								<a href="#">Новости</a>
@@ -100,15 +100,17 @@
 						<div class="slider">
 							<input type="radio" id="btn-1" name="toggle" checked>
 							<input type="radio" id="btn-2" name="toggle">
+                            
+                            <input type="radio" id="slider-prev" name="toggle" >
+							<input type="radio" id="slider-next" name="toggle">
+                            
 							<div class="slider-controls">
 								<label for="btn-1"></label>
 								<label for="btn-2"></label>
 							</div>
-								<input type="radio" id="slider-prev" name="toggle" >
-								<input type="radio" id="slider-next" name="toggle">
 
-									<label class="slider-arrow slider-prev" for="slider-prev">sdfs</label>
-									<label class="slider-arrow slider-next" for="slider-next">sdfds</label>
+                            <label class="slider-arrow slider-prev" for="slider-prev"></label>
+                            <label class="slider-arrow slider-next" for="slider-next"></label>
 							<div class="slides">
 								<div class="slide">
 										<h2>Перфораторы</h2>
@@ -406,7 +408,7 @@
     <div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 		
-    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     </div>
 
@@ -462,21 +464,36 @@
         }
       });
 
+	/* Селектор, который выбирает кнопку по которой открывается окно */
       var mapOpen = document.querySelector(".js-open-map");
 
+	/* Селектор, который выбирает окно */
+
       var mapPopup = document.querySelector(".modal-content-map");
+	  
+	  	/* Селектор, который выбирает кнопку закрыть */
       var mapClose = mapPopup.querySelector(".modal-content-close");
 
+	  	/* Вешаем событие на кнопку открытия */
+
       mapOpen.addEventListener("click", function(event) {
+		  /* Отменяем переход по ссылке */
         event.preventDefault();
+			  	/* ДОбавляем класс, который делает окно видимым */
         mapPopup.classList.add("modal-content-show");
       });
 
+	  	/* Вешаем событие на кнопку закрытия */
+
       mapClose.addEventListener("click", function(event) {
+		  		  /* Отменяем переход по ссылке */
         event.preventDefault();
+					  	/* Убираем класс, который делает окно видимым */
         mapPopup.classList.remove("modal-content-show");
       });
 
+
+		/* Вешаем событие на нажатие кнопки (клавиатуры) на кнопку открыть */
       window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
           if (mapPopup.classList.contains("modal-content-show")) {
@@ -485,6 +502,45 @@
         }
       });
 
+	/* Ниже идет все про модалку купить */
+
+	/* Селектор, который выбирает кнопку по которой открывается окно */
+      var buyOpen = document.querySelector(".buy");
+
+	/* Селектор, который выбирает окно */
+
+      var buyPopup = document.querySelector(".modal-content-buy");
+	  
+	  	/* Селектор, который выбирает кнопку закрыть */
+      var buyClose = buyPopup.querySelector(".modal-content-close");
+
+	  	/* Вешаем событие на кнопку открытия */
+
+      buyOpen.addEventListener("click", function(event) {
+		  /* Отменяем переход по ссылке */
+        event.preventDefault();
+			  	/* ДОбавляем класс, который делает окно видимым */
+        buyPopup.classList.add("modal-content-show");
+      });
+
+	  	/* Вешаем событие на кнопку закрытия */
+
+      buyClose.addEventListener("click", function(event) {
+		  		  /* Отменяем переход по ссылке */
+        event.preventDefault();
+					  	/* Убираем класс, который делает окно видимым */
+        buyPopup.classList.remove("modal-content-show");
+      });
+
+
+		/* Вешаем событие на нажатие кнопки (клавиатуры) на кнопку открыть */
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (buyPopup.classList.contains("modal-content-show")) {
+            buyPopup.classList.remove("modal-content-show");
+          }
+        }
+      });
 
     </script>
 

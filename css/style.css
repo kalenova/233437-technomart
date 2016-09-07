@@ -109,7 +109,7 @@ body {
  color: #ffffff;
  background-color: #293449;
  height: 42px;
- font-size: 18px; 
+ font-size: 17px; 
  line-height: 24px;
  font-family: "Cuprum";  
 }
@@ -173,9 +173,9 @@ body {
   width: 270px;
   border: none;
   background: #293449;
-  padding-left: 60px;
-  padding-top: 4px; 
-  color: #FFFFFF;
+  padding-left: 50px;
+  padding-top: 2px; 
+  color: white;
 }
 
 input::-webkit-input-placeholder {
@@ -342,10 +342,15 @@ input:-ms-input-placeholder {
   color: #b7bfc8;
 }
 
+
+.user-block {
+    margin-right: -22px;
+}
+
 .user-block .butn  {
   display: inline-block;
   box-sizing: border-box;
-  
+   
   padding: 10px 22px;
 
   font-weight: 700;
@@ -365,23 +370,23 @@ input:-ms-input-placeholder {
 
 .user-block a.login-block {
   float: right;
-	position: relative;
+  position: relative;
   text-align: left;
   font-size: 21px;
-	padding-left: 45px;
+  padding-left: 45px;
   padding-right: 50px;
   width: 300px; 
 }
 
 .user-block a.login-block::before {
-	content: "\1f468";
+  content: "\1f468";
   position: absolute;
   top: 9px;
   left: 15px;
   width: 18px;
   height: 18px;
-	font-family: "symbols-technomart";  
-	font-size: 18px;
+  font-family: "symbols-technomart";  
+  font-size: 18px;
   color: #b7bfc8;
 }
 
@@ -687,6 +692,7 @@ margin-top: 56px;
   line-height: 40px;
   font-family: "Cuprum";
   color: #32425c;
+  font-weight: 400;
 }
 
 .section-header.inner {
@@ -751,7 +757,7 @@ a.btn:active {
   margin: 0 auto;
   overflow: hidden;
 
-	margin-bottom: 52px; 
+  margin-bottom: 52px; 
 }
 
 .slide {
@@ -774,19 +780,19 @@ a.btn:active {
 }
 
 .slider h2 {
-	position: absolute;
+  position: absolute;
   font-size: 36px;
   text-transform: uppercase;
   line-height: 40px;
   font-family: "Cuprum";
-	margin-bottom: 0;
+  margin-bottom: 0;
   margin-top: 0;
   z-index: 20;
   color: #ffffff;
 }
 
 .slider p {
-	position: absolute;
+  position: absolute;
   font-size: 18px;
   line-height: 22px;
   font-family: "Cuprum";
@@ -802,26 +808,26 @@ a.btn:active {
   z-index: 10;
 }
 
-.slider::before {
+.slider-prev::before {
   content: "\3c";
   position: absolute;
-  top: 122px;
-  left: 25px;
-	font-family: "symbols-technomart";  
-	font-size: 45px;
-  color: #ffffff;
+  top: 0;
+  left: 0;
+  font-family: "symbols-technomart";  
+  font-size: 45px;
+  color: white;
   z-index: 40;
   cursor: pointer;
 }
 
-.slider::after {
+.slider-next::after {
   content: "\3e";
   position: absolute;
-  top: 122px;
-  left: 579px;
-	font-family: "symbols-technomart";  
-	font-size: 45px;
-  color: #ffffff;
+  top: 0;
+  left: 0px;
+  font-family: "symbols-technomart";  
+  font-size: 45px;
+  color: white;
   z-index: 40;
   cursor: pointer;
 }
@@ -873,7 +879,9 @@ a.btn:active {
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#slider-prev:checked ~ .slider-controls label[for="btn-1"],
+#slider-next:checked ~ .slider-controls label[for="btn-2"] {
     background: #ee3643;
 }
 
@@ -886,8 +894,11 @@ a.btn:active {
     color: #ffffff;
     z-index: 99;
     cursor: pointer;
-    color: rgba(0,0,0,0);
+    color: rgba(0,0,0,1);   
+    width: 40px;
+    height: 40px;
 }
+
 
 .slider-prev  {
     left: 25px;    
@@ -2092,10 +2103,6 @@ input[type="checkbox"]:disabled + label {
 
 }
 
-.modal-content-show {
-  display: block;
-  animation: bounce 0.6s;
-}
 
 .modal-error {
   animation: shake 0.6s;
@@ -2162,6 +2169,15 @@ input[type="checkbox"]:disabled + label {
   cursor: pointer;
 }
 
+.btn-form:hover {
+  background: #ca2c37;
+}
+
+.btn-cart:hover {
+  background: #ca2c37;
+}
+
+
 .modal-text {
 	display: block;
 	font-family: 'Cuprum Regular', Cuprum, 'Arial', sans-serif;
@@ -2201,7 +2217,7 @@ input[type="checkbox"]:disabled + label {
 
 }
 
-input::-webkit-input-placeholder {color:#999999;}
+input.modal-box::-webkit-input-placeholder {color:#999999;}
 
 /*Для карты*/
 
@@ -2219,6 +2235,8 @@ input::-webkit-input-placeholder {color:#999999;}
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -2232,7 +2250,8 @@ input::-webkit-input-placeholder {color:#999999;}
 
 /*Покупка*/
 
-.modal-content-buy { display: none;
+.modal-content-buy { 
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2309,4 +2328,13 @@ input::-webkit-input-placeholder {color:#999999;}
 	border-radius: 3px;
 	border: 1px solid #e5e5e5;
 	cursor: pointer;
+}
+
+.btn-catalog:hover {
+    border: 1px solid #bdc6ca;
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
 }
